@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b71;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar-menu {
+    padding: 8px 12px;
+    margin: 0 6px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.navbar-menu:hover {
+    background-color: #fff;
+    color: #1b1b1b71;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 25px auto;
+    background-color: #1b1b1b71;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 10px;
+    color: #fff;
+    margin: 25px 0px;
+    text-align: left;
+    background-color: #1b1b1b;
+}
+
+.delete-btn {
+    background-color: darkred;
+    color: #fff;
+    border: 1px solid pink;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: darkgreen;
+    color: #fff;
+    border: 1px solid green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: darkblue;
+    color: #fff;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    align-items: center;
+    background-color: yellowgreen;
+    background-position: 0 0;
+    border: 1px solid green;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.save-btn:active,
+.save-btn:hover,
+.save-btn:focus {
+    outline: 0;
+}
+
+
+.save-btn:active {
+    background-color: darkgreen;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.save-btn:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.save-btn:active:hover,
+.save-btn:focus:hover,
+.save-btn:focus {
+    background-color: darkgreen;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1b1b1b;
+    filter: opacity(0.8);
+    font-size: 14px;
+    margin: 5px 0;
+    height: 28px;
+}
+
+.form-label {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.copy {
+    background-color: darkblue;
+    color: #fff;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .row {
+        flex-direction: column;
+    }
+}
