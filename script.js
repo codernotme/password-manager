@@ -43,7 +43,7 @@ const editPasswordData = (index) => {
   let editable = "";
   for (let i = 0; i < passwordData.length; i++) {
     editable = i == index ? "contenteditable" : "";
-    color = i % 2 == 0 ? "#1b1b1b" : "whitesmoke";
+    color = i % 2 == 0 ? "#1b1b1b" : "grey";
 
     row = passwordData[i];
     html += `
@@ -118,7 +118,7 @@ const populateSavedPasswordDetails = () => {
     let html = "";
     let color = "#1b1b1b";
     for (let i = 0; i < passwordData.length; i++) {
-      color = i % 2 == 0 ? "#1b1b1b" : "whitesmoke";
+      color = i % 2 == 0 ? "#1b1b1b" : "grey";
       row = passwordData[i];
       html += `
                   <tr>
